@@ -53,7 +53,8 @@ const ProjectShowcase: React.FC = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-gray-800">{project.title}</h3>
                 <p className="text-gray-600 mt-2">{project.description}</p>
-                <a
+               <div className="flex justify-between mt-4">
+                 <a
                   href={project.projectUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -61,7 +62,20 @@ const ProjectShowcase: React.FC = () => {
                 >
                   View Project
                 </a>
+
+
+                <a
+                  href={project.projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition duration-300"
+                >
+                  View Project
+                </a>
+               </div>
               </div>
+
+              
             </div>
           ))}
         </div>

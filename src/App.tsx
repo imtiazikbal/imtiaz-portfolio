@@ -7,9 +7,8 @@ import Navbar from './sections/NavBar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App scroll-smooth">
       <Navbar />
-     
       <HeroSection />
       <ExpertiseSection />
       <ProjectShowcase />
