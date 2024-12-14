@@ -8,30 +8,31 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    title: "Echo GPT - AI Chatbot",
-    description: "A web application built with NextJs and Node.js(NestJs).",
-    imageUrl: "/echogpt.png",
-    projectUrl: "https://echogpt.live/",
-  },
-  {
-    title: "ManyDial - Automation Calling Tool",
-    description: "A web application built with NextJs and Node.js(NestJs).",
-    imageUrl: "/manydial.png",
-    projectUrl: "https://www.manydial.com",
-  },
-  {
-    title: "Newspaper",
-    description: "A web application built with NextJs and Laravel",
-    imageUrl: "/durbin.png",
-    projectUrl: "https://newspaper.appifydevs.com/",
-  },
-];
+    {
+      title: "Echo GPT - AI Chatbot",
+      description: "A web application built with NextJs and Node.js(NestJs).  ",
+      imageUrl: "/echogpt.png",
+      projectUrl: "https://echogpt.live/",
+    },
+    {
+      title: "ManyDial - Automation Calling",
+      description: "A web application built with NextJs and Node.js(NestJs).  ",
+      imageUrl: "/manydial.png",
+      projectUrl: "https://www.manydial.com",
+    },
+    {
+      title: "Newspaper",
+      description: "A web application built with NextJs and PHP(Laravel).         ",
+      imageUrl: "/durbin.png",
+      projectUrl: "https://newspaper.appifydevs.com/",
+    },
+  ];
+  
 
 const ProjectShowcase: React.FC = () => {
   return (
     <section id="projects" className="py-16">
-      <div className="container mx-auto px-6 lg:px-20 text-center">
+      <div className="container mx-auto px-6 lg:px-20 text-center ">
         {/* Section Header */}
         <h2 className="text-4xl font-bold text-gray-800">Project Showcase</h2>
         <p className="text-lg text-gray-600 mt-4">
@@ -39,7 +40,7 @@ const ProjectShowcase: React.FC = () => {
         </p>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 ">
           {projects.map((project) => (
             <div
               key={project.title}
@@ -60,7 +61,7 @@ const ProjectShowcase: React.FC = () => {
                   rel="noopener noreferrer"
                   className="inline-block mt-4 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition duration-300"
                 >
-                  View Project
+                 Live Demo
                 </a>
 
 
@@ -70,7 +71,7 @@ const ProjectShowcase: React.FC = () => {
                   rel="noopener noreferrer"
                   className="inline-block mt-4 px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition duration-300"
                 >
-                  View Project
+                 GitHub Link
                 </a>
                </div>
               </div>

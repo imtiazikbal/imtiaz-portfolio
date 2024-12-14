@@ -2,8 +2,20 @@
 body {
   margin: 0;
   background-image: url('./../public/bg.png');
+  background-color: rgba(0, 0, 255, 0.151);
+  
   
 }
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 .App {
   text-align: center;

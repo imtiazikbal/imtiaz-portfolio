@@ -6,7 +6,7 @@ const HeroSection = () => {
         <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse md:flex-row items-center gap-12">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-5xl font-bold text-gray-800 leading-tight">
-              Hi, I'm <span className="text-blue-600">Md Ikbal Hossen</span>
+              Hi, I'm <span className="text-blue-600 cursor-pointer"><a href="/">MD IKBAL HOSSEN</a></span>
             </h1>
             <p className="text-gray-600 text-lg mt-6 leading-relaxed">
               Expert in building backend systems, scalable solutions, and delivering
